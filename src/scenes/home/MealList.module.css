@@ -1,0 +1,52 @@
+.content > div > * {
+  margin: 4px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  color: var(--primary-color);
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta button {
+  align-self: end;
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.amount p {
+  margin-right: 4px;
+}
+
+.amount input {
+  height: 24px;
+  width: 60px;
+  border-color: var(--primary-color);
+}

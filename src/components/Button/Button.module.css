@@ -1,0 +1,24 @@
+.container {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.secondary {
+  background-color: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
