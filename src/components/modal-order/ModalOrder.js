@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import OrderContext from "../../store/order-context";
-import MealWrapper from "../MealWrapper/MealWrapper";
+import { ADD, DELETE } from "../../store/order/order-actions";
+import OrderContext from "../../store/order/order-context";
+import MealWrapper from "../meal-wrapper/MealWrapper";
 import { createPortal } from "react-dom";
-import { ADD, DELETE } from "../../store/order-actions";
 
 import classes from "./ModalOrder.module.css";
-import Button from "../Button/Button";
+import Button from "../button/Button";
 
 export default function ModalOrder({ isOpen, setModal }) {
   const { meals, getTotalAmount } = useContext(OrderContext);

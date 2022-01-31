@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
-import { OrderContextProvider } from "./store/order-context";
+import { OrderContextProvider } from "./store/order/order-context";
 import "./index.css";
-import App from "./scenes/home/App";
+import App from "./pages/home/App";
 
 ReactDOM.render(
   <OrderContextProvider>

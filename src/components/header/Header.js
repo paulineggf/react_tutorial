@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { ReactComponent as PurchaseIcon } from "../../img/icons/shopping-buy-purchase-value-svgrepo-com.svg";
-import OrderContext from "../../store/order-context";
-import ModalOrder from "../ModalOrder/ModalOrder";
+import OrderContext from "../../store/order/order-context";
+import ModalOrder from "../modal-order/ModalOrder";
 
 import classes from "./Header.module.css";
 

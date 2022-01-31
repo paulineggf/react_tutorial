@@ -1,8 +1,6 @@
 import React from "react";
-import MealWrapper from "../../components/MealWrapper/MealWrapper";
+import MealWrapper from "../../components/meal-wrapper/MealWrapper";
 import MealItem from "./MealItem";
-
-import classes from "./MealList.module.css";
 
 const meals = [
   {
@@ -21,7 +19,7 @@ export default function MealList() {
   return (
     <MealWrapper>
       {meals.map((meal) => (
-        <MealItem key={`${meal.name}`} classes={classes} meal={meal} />
+        <MealItem key={`${meal.name}`} meal={meal} />
       ))}
     </MealWrapper>
   );

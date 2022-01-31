@@ -1,9 +1,11 @@
 import React, { useState, useContext, useEffect } from "react";
-import Button from "../../components/Button/Button";
-import OrderContext from "../../store/order-context";
-import { SET } from "../../store/order-actions";
+import Button from "../../components/button/Button";
+import OrderContext from "../../store/order/order-context";
+import { SET } from "../../store/order/order-actions";
 
-export default function MealList({ meal, classes }) {
+import classes from "./MealItem.module.css";
+
+export default function MealItem({ meal }) {
   const { meals, dispatchMeal } = useContext(OrderContext);
   const [number, setNumber] = useState(0);
 

@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 import { mealReducer } from "./order-reducer";
 
-import { useReducerWithMiddleware } from "../services/useReducerWithMiddleware";
+import { useReducerWithMiddleware } from "../../services/utils/useReducerWithMiddleware";
 
 const OrderContext = createContext();
 
