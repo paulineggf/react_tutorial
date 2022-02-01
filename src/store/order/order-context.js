@@ -1,7 +1,7 @@
 import React, { createContext } from "react";
 import { mealReducer } from "./order-reducer";
 
-import { useReducerWithMiddleware } from "../../services/utils/useReducerWithMiddleware";
+import { useReducerWithMiddleware } from "../../services/utils/use-reducer-with-middleware";
 
 const OrderContext = createContext();
 
@@ -16,7 +16,7 @@ export const OrderContextProvider = (props) => {
     if (meals.length === 0) {
       return 0;
     }
-    return meals.map((meal) => meal.number).reduce((prev, curr) => prev + curr, 0);
+    return meals.reduce((prev, curr) => prev + curr.number, 0);
   };
 
   const getTotalAmount = () => {
